@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+ body {
+    background-color: white;
+ }
+
+  /*HEADER*/
+  
+header{
+    background-color: white;
+}
+
+li {
+    list-style: none;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .logo{
+    width: 45px;
+    height: 45px;
+    background: url(./assets/274292716_7232587793448720_665045178879353144_n.jpg) center/cover;
+    border-radius: 50px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight:800;
+    color: rgba(88, 20, 121, 1);
+    font-family: sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links {
+    transition: 0.4s ease;
+}
+
+.nav-links:hover {
+    color: yellow;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:1268px){
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg)
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: absolute;
+        z-index: 3;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #fff;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-items{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: 1.5s ;
+}
+
+.show {
+    visibility: initial;
+    transform: translateX(0);
+    transition: 1.5s ;
+}
+
+.hidden2 {
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 1.5s ;
+    
+}
+
+.show2 {
+    visibility: initial;
+    transform: translateX(0);
+    transition: 1.5s ;
+}
+
+.hidden3 {
+    visibility: initial;
+    transform: translateY(-100%);
+    transition: 1.5s ;
+    
+}
+
+.show3 {
+    visibility: initial;
+    transform: translateY(0);
+    transition: 1.5s ;
+}
+
+
+.hidden4 {
+    visibility: initial;
+    transform: translateY(0);
+    transition: 1.5s ;
+    
+}
+
+.show4 {
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 1.5s ;
+}
+/* MAIN */
+
+.avancologo {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;   
+    transition-delay: 1.5s;
+}
+
+.avancologo span {
+    background: url(./assets/avançoLogo1.jpg);
+
+}
+
+.sections {
+    width: 100%;
+    display: block;
+    background-color: black;
+   
+    top: 440px;
+} 
+
+#box {
+    width: 100%;
+    height: 370px;
+    background: black;
+    position: absolute;
+    top: 70px;
+}
+
+.space {
+    height: 200px;
+}
+.t1 {
+    display: flex;
+    justify-content: right;
+}
+.t1 h1{
+    width: 80% ;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 20%;
+    margin-right: 10%;
+    padding-right: 10px;
+    border-right: 2px solid yellow;
+}
+
+.t2 {
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.t2 h3 {
+    width: 210px;
+    height: auto;
+    color: #fff;
+    margin-left: 10%;
+    padding-left: 10px;
+    border-left: 2px solid yellow;
+   
+    position: absolute;
+    z-index: 1;
+}
+
+.t2 span {
+    width: 50%;
+    height: 400px;
+    background: url(./assets/avanco15.jpg) center/cover;
+    
+    position: absolute;
+    z-index: 0;
+    right: 0;
+}
+
+.t3 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.t3 h2 {
+    margin: 0 10%;
+    position: absolute;
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+}
+
+.t3 span {
+    width: 100%;
+    height: 300px;
+    background: url(./assets/avanco13.jpg) center/cover;
+}
+
+.t4 {
+    display: flex;
+    justify-content: right;
+}
+
+.t4 h1 {
+    margin-top: 10%;
+    margin-right: 5%;
+    padding-right: 10px;
+    color: white;
+    font-size: 50px; 
+    text-align: right;
+    text-transform: uppercase;
+    border-right: 2px solid yellow;
+}
+
+.t5 {
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 0;
+}
+
+.t5 h3 {
+    width: 210px;
+    height: auto;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    border-right: 2px solid yellow;
+   
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+}    
+
+.t5 span {
+    width: 50%;
+    height: 400px;
+    background: url(./assets/avanco.jpg) center/cover;
+    
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+
+.t6 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.t6 h2 {
+    margin: 0 10%;
+    position: absolute;
+    text-align: center;
+    color: yellow;
+    font-size: 20px;
+}
+
+.t6 span {
+    width: 100%;
+    height: 350px;
+    background: url(./assets/avanco12.jpg) center/cover;
+    opacity: 0.5;
+}
+
+.t7 {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.t7 h2 {
+    height:120px ;
+    text-align: center;
+    margin: 0 10%;
+    position: absolute;
+    text-align: center;
+    color: yellow;
+    font-size: 20px;
+}
+
+.t7 h2 a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid yellow;
+}
+
+.t7 span {
+    width: 100%;
+    height: 350px;
+    background: url(./assets/avanco1.jpg) center/cover;
+    opacity: 0.5;
+}
+
+/* FOOTER */
+footer {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+.social-links {
+    height: 30px;
+    align-content: center;
+}
+.social-links a {
+    font-size: 25px;
+    margin-right: 20px; 
+    gap: 5px;  
+    color: black;
+}
+
+.address {
+    margin-left: 20px;
+}
+
+.address a {
+    color: black;
+}

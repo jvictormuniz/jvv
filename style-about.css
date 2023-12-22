@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+ body {
+    background-color: rgba(88, 20, 121, 1);
+ }
+
+  /*HEADER*/
+  
+header{
+    background-color: rgba(88, 20, 121, 1);
+}
+
+li {
+    list-style: none;
+}
+
+header a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .logo{
+    width: 45px;
+    height: 45px;
+    background: url(./assets/274292716_7232587793448720_665045178879353144_n.jpg) center/cover;
+    border-radius: 50px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 34px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight:800;
+    color: rgba(88, 20, 121, 1);
+    font-family: sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links {
+    transition: 0.4s ease;
+}
+
+.nav-links:hover {
+    color: red;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:1268px){
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg)
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: absolute;
+        z-index: 3;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: rgba(88, 20, 121, 1);
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-items{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: 2s ;
+}
+
+.show {
+    visibility: initial;
+    transform: translateX(0);
+    transition: 2s ;
+}
+
+.hidden2 {
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 2s ;
+    
+}
+
+.show2 {
+    visibility: initial;
+    transform: translateX(0);
+    transition: 2s ;
+}
+
+.hidden3 {
+    visibility: initial;
+    transform: translateY(-100%);
+    transition: 2s ;
+    
+}
+
+.show3 {
+    visibility: initial;
+    transform: translateY(0);
+    transition: 2s ;
+}
+
+
+.hidden4 {
+    visibility: initial;
+    transform: translateY(0);
+    transition: 2s ;
+    
+}
+
+.show4 {
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 2s ;
+}
+
+/* MAIN */
+
+.logo {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    transition-delay: 1.5s;
+}
+
+.logo img {
+    height: 80%;
+    border-radius: 100px;
+}
+
+#box {
+    width: 100%;
+    height: 370px;
+    background: white;
+    position: absolute;
+    top: 70px;
+}
+
+.sections{
+    background: white;
+}
+
+.vision h4 {
+    color: rgba(88, 20, 121, 1);
+    text-align: right;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 4px solid yellow;
+}
+.vision-info {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.vision-info h2 {
+    width: 60%;
+    color: yellow;
+    background: rgba(88, 20, 121, 1);
+    padding: 10px;
+    margin-left: 10px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.vision-info span {
+    width: 100%;
+    height: 300px;
+    background: url(./assets/theholies3.jpg) center/cover;
+   
+}
+
+.mission h4 {
+    color: rgba(88, 20, 121, 1);
+    text-align: left;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 4px solid yellow;
+}
+
+.mission-info {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.mission-info h2 {
+    width: 60%;
+    color: yellow;
+    background: rgba(88, 20, 121, 1);
+    text-align: right;
+    padding: 10px;
+    margin-right:  10px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.mission-info span {
+    width: 100%;
+    height: 300px;
+    background: url(./assets/avanco6.jpg) center/cover;
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+}
+
+.values h4 {
+    color: rgba(88, 20, 121, 1);
+    text-align: right;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 4px solid yellow;
+}
+
+.values span {
+    width: 100%;
+    height: 280px;
+    background: url(./assets/values.png) center/cover;
+}
+
+.lidership {
+    display: flex;
+    height: 650px;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+#JoaoGabriel {
+    width: 30%;
+    height: 100%;
+    background: url(./assets/JoaoGabriel.jpg) center/cover;
+    border-left: 7px solid yellow;
+}
+
+#SuannyCunha {
+    width: 30%;
+    height: 100%;
+    background: url(./assets/SuannyCunha.jpg) 50%/cover;
+    transition-delay: 0.2s;
+    border-left: 12px solid rgba(88, 20, 121, 1) ;
+}
+
+.lidership-info {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+.lidership-info h4{
+    color: rgba(88, 20, 121, 1);
+    text-align: left;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 4px solid yellow;
+}
+
+.lidership-info h5 {
+    color: yellow;
+    background: rgba(88, 20, 121, 1);
+    font-weight: 500;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.block {
+    width: 100%;
+    height: 12px;
+    background-color: rgba(88, 20, 121, 1);
+}
+
+/* FOOTER */
+footer {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    font-size: 25px;
+    margin-right: 20px; 
+    gap: 5px;   
+}
+
+.address {
+    margin-left: 20px;
+    color: rgba(88, 20, 121, 1);
+}
