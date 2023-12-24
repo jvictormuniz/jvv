@@ -78,7 +78,7 @@ header .logo{
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width:1268px){
+@media (max-width:3000px){
     .hamburguer {
         display: block;
     }
@@ -198,16 +198,19 @@ header .logo{
 
 .title1 {
     display: flex;
-    justify-content: center;
 }
 
 .title1 h2 {
-    width: 65%;
+    width: 100%;
    color: rgba(88, 20, 121, 1);
+   text-align: right;
    font-size: 30px;
-   margin-top: 10%;
+   margin-right: 5%;
+   margin-top: 50px;
+   padding-right: 10px;
    border-right: 4px solid yellow;
 }
+
 .title2 {
     display: flex;
     justify-content: end;
@@ -218,8 +221,8 @@ header .logo{
     background-color: rgba(88, 20, 121, 1);
     text-align: right;
     font-size: 25px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 10px;
     border-left: 4px solid yellow;
 }
@@ -236,6 +239,18 @@ header .logo{
 .title3 a {
     color: white;
     font-style: italic;
+}
+
+@media (min-width:1000px) {
+    .title1 h2 {
+        font-size: 80px;
+    }
+    .title2 h3 {
+        font-size: 45px;
+    }
+    .title3 h4 {
+        font-size: 40px;
+    }
 }
 
 #departaments {
@@ -316,13 +331,13 @@ header .logo{
 }
 
 
-@media screen and (max-width:425px){
-    .departaments div h3 {
+@media (max-width:425px){
+    #departaments div h3 {
         font-size: 45px;
         margin-left: 20px;
     }
 
-    .departaments div p {
+    #departaments div p {
         margin-left: 20px;
     }
 

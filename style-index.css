@@ -78,7 +78,7 @@ header .logo{
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width:1268px){
+@media (max-width:3000px){
     .hamburguer {
         display: block;
     }
@@ -208,9 +208,9 @@ header .logo{
     color: rgba(88, 20, 121, 1);
     text-align: right;
     font-size: 40px;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 10%;
     padding-right: 10px;
     border-right: 4px solid yellow;
     
@@ -221,14 +221,28 @@ header .logo{
     margin-top: 20px;
     font-size: 60px;
     padding-left:10px;
+    margin-left: 10%;
 }
 .services p {
-    width: 260px;
-    margin-left: 10px;
+    width: 30%;
+    margin-left: 10%;
     color: yellow;
     background-color: rgba(88, 20, 121, 1);
     font-size: 20px;
     padding-left: 10px;
+}
+
+@media (min-width:1000px) {
+    .services h4 {
+        font-size: 60px;
+    }
+    .services h2 {
+        font-size: 80px;
+        
+    }
+    .services p {
+        font-size: 40px;
+    }
 }
 
 #info {
@@ -250,9 +264,9 @@ header .logo{
     color: rgba(88, 20, 121, 1);
     text-align: right;
     font-size: 40px;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 5%;
     padding-right: 10px;
     border-right: 4px solid yellow;
 }
@@ -276,9 +290,9 @@ header .logo{
 }
 
 #gc-info h3 {
-    color: rgba(88, 20, 121, 1);
+    color: white;
     font-size: 20px;
-    background: white;
+    background: rgba(88, 20, 121, 1);
     text-align: right;
     margin-left: 10px;
     margin-top: 40px;
@@ -291,11 +305,21 @@ header .logo{
 }
 
 #gc-info a {
-    color: red;
-    border-bottom: 2px solid;
+    color: yellow;
     font-style: italic;
 }
 
+@media (min-width:1000px) {
+    .gc h3 {
+        font-size: 60px;
+    }
+    #gc-info h4{
+        font-size: 30px;
+    }
+    #gc-info h3 {
+        font-size: 40px;
+    }
+}
 .gps {
     display: flex;
     flex-direction: column;
@@ -306,9 +330,9 @@ header .logo{
     color: rgba(88, 20, 121, 1);
     text-align: right;
     font-size: 40px;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 5%;
     padding-right: 10px;
     border-right: 4px solid yellow;
 }
@@ -332,9 +356,9 @@ header .logo{
 
 #gps-info h3 {
     width: 60%;
-    color: rgba(88, 20, 121, 1);
+    color: white;
     font-size: 20px;
-    background: white;
+    background: rgba(88, 20, 121, 1);
     text-align: right;
     margin-left: 10px;
     margin-top: 40px;
@@ -347,11 +371,21 @@ header .logo{
 }
 
 #gps-info a {
-    color: red;
-    border-bottom: 2px solid ;
+    color: yellow;
     font-style: italic;
 }
 
+@media (min-width:1000px) {
+    .gps h3 {
+        font-size: 60px;
+    }
+    #gps-info h4 {
+        font-size: 30px;
+    }
+    #gps-info h3 {
+        font-size: 40px;
+    }
+}
 /* FOOTER */
 footer {
     height: 80px;
