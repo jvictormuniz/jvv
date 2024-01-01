@@ -320,6 +320,10 @@ header .logo{
     background-attachment: fixed;
 }
 
+.gestaodeculto {
+    background: url(./assets/comunicacaojvv4.jpg) center/cover;
+}
+
 .teatro {
     background: url(./assets/TeatroJvv.jpg) center/cover;
     background-attachment: fixed;
